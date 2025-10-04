@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Visor 360°</title>
+  <link rel="stylesheet" href="moto.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="visor-wrapper" id="visorWrapper">
+      <div class="visor loading" id="visor"></div>
+      <div class="zoom-indicator" id="zoomIndicator">Zoom: 100%</div>
+      <div class="loading-progress" id="loadingProgress">Cargando: 0%</div>
+    </div>
+
+    <div class="controls">
+      <button class="btn" id="prevBtn">◀ Anterior</button>
+      
+      <div class="progress-container">
+        <svg class="progress-ring" id="progressRing">
+          <circle class="progress-ring-circle progress-ring-bg"></circle>
+          <circle class="progress-ring-circle progress-ring-fill" id="progressFill"></circle>
+        </svg>
+        <div class="progress-text" id="progressText">1/190</div>
+      </div>
+      
+      <button class="btn" id="nextBtn">Siguiente ▶</button>
+      <button class="btn" id="resetBtn">⟲ Reiniciar</button>
+      <button class="btn btn-auto-rotate" id="autoRotateBtn">⟳ Auto-rotar</button>
+    </div>
+
+    <div class="instructions">
+      <strong>PC:</strong> Rueda del mouse para rotar | Shift + rueda para zoom | Click y arrastrar para rotar<br>
+      <strong>Móvil:</strong> Desliza para rotar | Pellizca para zoom | Doble toque para zoom
+    </div>
+  </div>
+</body>
+<script src="moto.js"></script>
+</html>
