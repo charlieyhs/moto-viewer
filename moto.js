@@ -36,7 +36,8 @@ function updateProgress(frame) {
 
 // Función para actualizar el frame mostrado
 function updateFrame(frame) {
-    const newFrame = ((frame - 1 + totalFrames) % totalFrames) + 1;
+    const newFrame = Math.min(Math.max(frame, 1), totalFrames);
+
     currentFrame = newFrame;
     
     // Verificar si la imagen está precargada
