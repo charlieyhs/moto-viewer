@@ -181,7 +181,7 @@ document.addEventListener("mouseup", () => {
     visor.style.cursor = 'grab';
 });
 
-// Touch gestos (móvil) - Mejorado
+// Touch gestos (móvil)
 let touchStartX = 0;
 let lastDist = 0;
 let touchStartTime = 0;
