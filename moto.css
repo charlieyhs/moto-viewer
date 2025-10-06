@@ -211,7 +211,7 @@ body {
 }
 
 .zoom-indicator.visible {
-    opacity: 1;
+    opacity: 1 ;
 }
 
 .loading-progress {
@@ -227,92 +227,38 @@ body {
     z-index: 10;
 }
 
-/* Fullscreen styles */
-.visor-wrapper.fullscreen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    max-width: none;
-    z-index: 9999;
-    background: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0;
-}
 
-.visor-wrapper.fullscreen .visor {
-    max-width: 95vw;
-    max-height: 95vh;
-    width: auto;
-    height: auto;
-    aspect-ratio: 16/9;
-}
-
-.visor-wrapper.fullscreen .zoom-indicator {
-    position: fixed;
-}
-
-.fullscreen-exit {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 10000;
-    background: rgba(255, 0, 0, 0.8);
-    border: 2px solid #ff0000;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    opacity: 0;
-    transition: all 0.3s ease;
-    pointer-events: none;
-}
-
-.fullscreen-exit.visible {
-    opacity: 1;
-    pointer-events: all;
-}
-
-.fullscreen-exit:hover {
-    background: rgba(255, 0, 0, 1);
-    transform: scale(1.05);
-}
 
 @media (max-width: 600px) {
     .controls {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 12px 20px;
-    gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 12px 20px;
+        gap: 10px;
     }
 
     .btn {
-    padding: 8px 14px;
-    font-size: 14px;
+        padding: 8px 14px;
+        font-size: 14px;
     }
 
     .progress-container {
-    width: 60px;
-    height: 60px;
+        width: 60px;
+        height: 60px;
     }
 
     .progress-ring-circle {
-    r: 25;
-    cx: 30;
-    cy: 30;
+        r: 25;
+        cx: 30;
+        cy: 30;
     }
 
     .progress-text {
-    font-size: 12px;
+        font-size: 12px;
     }
 
     .instructions {
-    font-size: 12px;
-    padding: 10px;
+        font-size: 12px;
+        padding: 10px;
     }
 }
