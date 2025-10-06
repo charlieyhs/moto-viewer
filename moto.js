@@ -90,7 +90,7 @@ function toggleAutoRotation() {
 function startAutoRotation() {
     autoRotateInterval = setInterval(() => {
         updateFrame(currentFrame + 1);
-    }, 100); // Rotar cada 100ms (10 fps)
+    }, 10); // Rotar cada 100ms (10 fps)
     autoRotateBtn.classList.add('active');
     autoRotateBtn.textContent = "⏹ Detener rotación";
 }
