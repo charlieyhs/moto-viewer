@@ -31,10 +31,3 @@ Incluye controles intuitivos para navegación, zoom, rotación automática y sop
 - **JavaScript (Vanilla)** → lógica de interacción, rotación, zoom, carga de imágenes.  
 
 ---
-
-## 🚀 Instalación y uso
-
-1. Clona el repositorio:
-   ```bash
-   git clone [https://github.com/tu-usuario/visor-360.git](https://github.com/charlieyhs/moto-viewer.git)
-   cd visor-360
